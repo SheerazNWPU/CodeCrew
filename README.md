@@ -35,11 +35,11 @@
 
 *Figure 2: Agent interaction sequence diagram*
 
-### Data Flow Diagram
+### Simplified Pipeline
 
 <img src="codecrew_flow.png" width="100%">
 
-*Figure 3: Data flow through the system*
+*Figure 3: Simplified view of the agent pipeline*
 
 ### Agent Roles & Responsibilities
 
@@ -61,3 +61,39 @@
 | 6 | Explainer | 📖 | Explains code to user | User-friendly explanation |
 
 ### Agent Details
+
+**📋 Requirements Analyzer**
+- **Input:** "Write a function to calculate factorial"
+- **Output:** Core functionality, edge cases, input/output specifications
+
+**🏗️ Designer**
+- **Input:** Requirements
+- **Output:** Algorithm choice, code structure, data flow
+
+**💻 Coder**
+- **Input:** Design
+- **Output:** Complete Python code with docstrings and error handling
+
+**🧪 Tester**
+- **Input:** Code
+- **Output:** Unit tests, edge case tests, error handling tests
+
+**✅ Reviewer**
+- **Input:** Code
+- **Output:** Quality feedback, improvements, approval
+
+**📖 Explainer**
+- **Input:** Code
+- **Output:** User-friendly explanation and usage examples
+
+---
+
+## 📦 Pre-Requisites
+
+### 1. Downloaded Model Checkpoint
+- DeepSeek Chat (7B) model (or any HuggingFace compatible LLM)
+- Path: `/path/to/your/model/`
+
+### 2. Python Dependencies
+```bash
+pip install torch transformers

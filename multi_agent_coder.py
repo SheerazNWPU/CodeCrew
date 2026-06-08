@@ -528,7 +528,7 @@ class CodeCrewOrchestrator:
 # MAIN
 # ============================================================
 if __name__ == "__main__":
-    DEEPSEEK_CHAT_PATH = "/home/15t/Gul/.cache/huggingface/hub/models--deepseek-ai--deepseek-llm-7b-chat/snapshots/main/"
+    DEEPSEEK_CHAT_PATH = "/.cache/huggingface/hub/models--deepseek-ai--deepseek-llm-7b-chat/snapshots/main/"
     
     print("\n" + "="*70)
     print("?? CODECREW - Multi-Agent Code Generation System")
